@@ -7,7 +7,7 @@ opcion = st.sidebar.selectbox("Selecciona una opción", ["Ver usuarios:","Agrega
 # Creamos lista de usuario
 match opcion:
     case "Ver usuarios":
-
+        st.text("test")
     case "Agregar":
         st.text("Por favor, inserte los datos a crear")
         st.text_input("Nombre:")
@@ -15,5 +15,6 @@ match opcion:
         st.input()
     
     case "Actualizar":
-
+        st.text("test")
     case "Eliminar":
+        st.text("test")
