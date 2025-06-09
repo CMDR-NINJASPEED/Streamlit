@@ -12,7 +12,7 @@ match opcion:
         st.text("Por favor, inserte los datos a crear")
         st.text_input("Nombre:")
         st.text_input("email")
-    st.input()
+        st.input()
     
     case "Actualizar":
 
