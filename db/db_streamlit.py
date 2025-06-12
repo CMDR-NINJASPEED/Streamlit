@@ -34,13 +34,10 @@ match opcion:
             
             cursor.execute("INSERT INTO usuarios (nombre, email) VALUES (?, ?)", (usuario, email))
 
-            except Exception as e:
-                print(f" Error al crear la base de datos o la tabla: {e}")
-
             finally:
             # Si conn es true entonces cierra
-                if conn:
-                    conn.close()
+            if conn:
+                conn.close()
 
     case "Actualizar":
         st.text("test")
