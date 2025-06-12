@@ -12,8 +12,8 @@ match opcion:
         st.text("Por favor, inserte los datos a crear")
         usuario=st.text_input("Nombre:")
         email=st.text_input("email")
-        st.button("Agregar",key=1)
-        if st.button("Agregar",key=2):
+        st.button("Agregar")
+        if st.button("Agregar"):
             try:
                 # Conectar a la base de datos (crea el archivo si no existe)
                 conn = sqlite3.connect('usuarios.db')
