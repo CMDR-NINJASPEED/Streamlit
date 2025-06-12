@@ -13,7 +13,7 @@ match opcion:
         usuario=st.text_input("Nombre:")
         email=st.text_input("email")
         st.button("Agregar",key=1)
-        if st.button("Agregar",key=1):
+        if st.button("Agregar",key=2):
             try:
                 # Conectar a la base de datos (crea el archivo si no existe)
                 conn = sqlite3.connect('usuarios.db')
