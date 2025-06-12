@@ -32,10 +32,10 @@ match opcion:
                 conn.commit()
                 print("Base de datos y tabla creadas correctamente.")
             
-            cursor.execute("INSERT INTO usuarios (nombre, email) VALUES (?, ?)", (usuario, email))
-
-            finally:
-            # Si conn es true entonces cierra
+                cursor.execute("INSERT INTO usuarios (nombre, email) VALUES (?, ?)", (usuario, email))
+        
+        finally:
+        # Cerramos la conexión de forma segura
             if conn:
                 conn.close()
 
