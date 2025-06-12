@@ -34,10 +34,10 @@ match opcion:
             
                 cursor.execute("INSERT INTO usuarios (nombre, email) VALUES (?, ?)", (usuario, email))
         
-        finally:
-        # Cerramos la conexión de forma segura
-            if conn:
-                conn.close()
+            finally:
+            # Cerramos la conexión de forma segura
+                if conn:
+                    conn.close()
 
     case "Actualizar":
         st.text("test")
